@@ -1,0 +1,37 @@
+
+  
+
+.page-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.red-line{
+    font-size: 24px;
+}
+
+.image-map{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:yellow;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding:5px;
+}
+
+.score{
+    margin:left;
+}
+
+.cup-1 {
+    margin:auto;
+}
+
+.cup-2 {
+    margin:auto;
+}
+
+.cup-3 {
+    margin:auto;
+}
