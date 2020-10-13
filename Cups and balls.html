@@ -1,37 +1,45 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Наперстки</title>
-        <link rel="stylesheet" href="Cups_and_balls.css">   
-    </head>
-    <body>
-        <header>
-           <h1 class="page-title">Наперстки</h1>
-        </header>
-        <main>
-            <p>
+
+<head>
+    <meta charset="utf-8">
+    <title>Наперстки</title>
+    <link rel="stylesheet" href="Cups_and_balls.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="page-title">Наперстки</h1>
+        <nav class="navigation">
+            <a href="#" class="navigation__link">Об игре</a>
+            <a href="#" class="navigation__link">Играть</a>
+        </nav>
+    </header>
+    <main>
+        <div class="main-box">
+            <div class="ruls">
                 <b>Наперстки</b>,
-                <a
-                    href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%BF%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B8_(%D0%B8%D0%B3%D1%80%D0%B0)"
-                    target="_blank"
-                >
+                <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%BF%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B8_(%D0%B8%D0%B3%D1%80%D0%B0)"
+                    target="_blank">
                     азартная игра
                 </a>
-                , в которой участвуют <b>два человека: ведущий и игрок.</b> 
-                У <b>ведущего</b> имеется <b>три одинаковых 
-                непрозрачных напёрстка</b>, под один из которых он прячет 
-                <b>маленький шарик</b>, после чего быстро меняет напёрстки местами. 
-                Затем <b>игроку</b> предлагается угадать, под каким из напёрстков 
+                , в которой участвуют <b>два человека: ведущий и игрок.</b>
+                У <b>ведущего</b> имеется <b>три одинаковых
+                    непрозрачных напёрстка</b>, под один из которых он прячет
+                <b>маленький шарик</b>, после чего быстро меняет напёрстки местами.
+                Затем <b>игроку</b> предлагается угадать, под каким из напёрстков
                 находится <b>шарик</b>.
-            </p>
+            </div>
 
             <div class="image-map">
-                <div class ="score">
+                <div class="score">
                     <p class="bet">Ставка:</p>
                     <p class="money">Деньги:</p>
+                   
                     <button class="Place-a-bet-button" onclick="handleCheckCup()">Сделать ставку</button>
                     <input type="number" class="Place-a-bet-input" placeholder="Ваша ставка" value="">
+                    <p class="player-message">Тут выводятся сообщения игроку</p>
                 </div>
+                
 
                 <button id="cup1" class="cupButton cup-1">
                     <b>Номер 1</b>
@@ -46,8 +54,10 @@
                     <img id="cup3Image" class="image" src="public/Cup.png" alt="Наперсток 3">
                 </button>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <script src="Score_check.js"></script>
-    </body>
+    <script src="Score_check.js"></script>
+</body>
+
 </html>
