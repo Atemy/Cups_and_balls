@@ -7,52 +7,55 @@
 </head>
 
 <body>
+
     <header>
         <h1 class="page-title">Наперстки</h1>
-        <nav class="navigation">
-            <a href="#" class="navigation__link">Об игре</a>
-            <a href="#" class="navigation__link">Играть</a>
-        </nav>
+        <div class="navigation">
+            <a href="#openModalRules" class="navigation_link">Об игре</a>
+            <a href="#openModalGameTable" class="start_game"> Начать игру</a>
+        </div>
     </header>
+    
     <main>
         <div class="main-box">
-            <div class="ruls">
-                <b>Наперстки</b>,
-                <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%BF%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B8_(%D0%B8%D0%B3%D1%80%D0%B0)"
-                    target="_blank">
-                    азартная игра
-                </a>
-                , в которой участвуют <b>два человека: ведущий и игрок.</b>
-                У <b>ведущего</b> имеется <b>три одинаковых
-                    непрозрачных напёрстка</b>, под один из которых он прячет
-                <b>маленький шарик</b>, после чего быстро меняет напёрстки местами.
-                Затем <b>игроку</b> предлагается угадать, под каким из напёрстков
-                находится <b>шарик</b>.
+            <div id="openModalRules" class="ruls">
+                <a href="#closeModalRules" title="Close" class="close">×</a>
+                <p class="gamesRules">
+                    <b>Наперстки</b>, азартная игра, в которой участвуют <b>два человека: ведущий и игрок.</b>
+                    У <b>ведущего</b> имеется <b>три одинаковых
+                        непрозрачных напёрстка</b>, под один из которых он прячет
+                    <b>маленький шарик</b>, после чего быстро меняет напёрстки местами.
+                    Затем <b>игроку</b> предлагается угадать, под каким из напёрстков
+                    находится <b>шарик</b>.
+                </p>               
             </div>
 
-            <div class="image-map">
+            <div  id="openModalGameTable" class="image-map">
+                <a href="#closeGameTable" title="Close" class="close">×</a>
                 <div class="score">
                     <p class="bet">Ставка:</p>
                     <p class="money">Деньги:</p>
-                   
+
                     <button class="Place-a-bet-button" onclick="handleCheckCup()">Сделать ставку</button>
                     <input type="number" class="Place-a-bet-input" placeholder="Ваша ставка" value="">
-                    <p class="player-message">Тут выводятся сообщения игроку</p>
+                    <p class="player-message"></p>
                 </div>
-                
+            
+                <div class="playng_field">
 
-                <button id="cup1" class="cupButton cup-1" disabled>
-                    <b>Номер 1</b>
-                    <img id="cup1Image" class="image-cup" src="public/Cup.png" alt="Наперсток 1">
-                </button>
-                <button id="cup2" class="cupButton cup-2" disabled>
-                    <b>Номер 2</b>
-                    <img id="cup2Image" class="image-cup" src="public/Cup.png" alt="Наперсток 2">
-                </button>
-                <button id="cup3" class="cupButton cup-3" disabled>
-                    <b>Номер 3</b>
-                    <img id="cup3Image" class="image-cup" src="public/Cup.png" alt="Наперсток 3">
-                </button>
+                    <button id="cup1" class="cupButton cup-1" disabled> 
+                        <img id="cup1Image" class="image-cup" src="public/Cup.png" alt="Наперсток 1">
+                    </button>
+                    
+                    <button id="cup2" class="cupButton cup-2" disabled>    
+                        <img id="cup2Image" class="image-cup" src="public/Cup.png" alt="Наперсток 2">
+                    </button>
+
+                    <button id="cup3" class="cupButton cup-3" disabled>    
+                        <img id="cup3Image" class="image-cup" src="public/Cup.png" alt="Наперсток 3">
+                    </button>
+
+                </div>
             </div>
         </div>
     </main>
