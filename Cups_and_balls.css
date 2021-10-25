@@ -46,8 +46,8 @@ a, a:visited{
 
 .ruls{
     background-image: url("public/Caps-capt.PNG");
-    width: 50%;
-    height:50%;
+    width: 700px;
+    height:470px;
     background-repeat: no-repeat;
     background-size:contain;
     opacity: 0;
@@ -84,8 +84,8 @@ a, a:visited{
 }
 
 .image-map{   
-        width: 50%;
-        height:50%;
+        width: 700px;
+        height:470px;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -95,7 +95,7 @@ a, a:visited{
         left: 50%;
         transform: translate(-50%,-50%);
         padding: 20px;
-        background-color: green;
+        background-color: rgb(88, 170, 88);
 }
 
 .image-map:target{
@@ -130,17 +130,22 @@ a, a:visited{
     justify-content: space-between;
 }
 
-.bet{
-    margin-bottom: 5px;
-}
-
 .player-message{
     height: 30px;
+    margin: 30px;
 }
 
 .score{
-    margin:auto;
-    width: 20%;
+    width: 660px;
+    height: 230px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: seagreen 5px solid;
+    border-radius: 20px;
+    /* margin:auto;
+    width: 20%; */
 }
 
 .image-cup {
@@ -166,15 +171,73 @@ a, a:visited{
 
 .cup-1 {
     margin:auto;
-    background: transparent
+    background: transparent;
 }
 
 .cup-2 {
     margin:auto;
-    background: transparent
+    background: transparent;
 }
 
 .cup-3 {
     margin:auto;
-    background: transparent
+    background: transparent;
+}
+
+.player_score{
+    height: 210px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
+
+.player-message-div{
+    width: 250px;
+    height: 125px;
+    margin-left: 20px;
+    background-color: rgba(192, 192, 192, 0.5);
+    border: silver 3px solid;
+    border-radius: 20px;
+    align-self:center;
+}
+
+.graphs{
+    width: 60px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-bottom: black 3px solid;
+}
+
+.player_graph{
+    height: 10px;
+    width: 20px;
+    background-color:rgb(74, 128, 228);
+}
+
+.master_graph{
+    height: 10px;
+    width: 20px;
+    background-color: lightcoral;
+}
+
+.money{
+    background-color: rgb(74, 128, 228);
+    width: 150px;
+    text-align: center;
+}
+
+.master-money{
+    background-color:lightcoral;
+    width: 150px;
+    text-align: center;
+}
+
+.bet{
+    background-color: goldenrod;
+    width: 150px;
+    text-align: center;
 }

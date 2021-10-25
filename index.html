@@ -15,7 +15,7 @@
             <a href="#openModalGameTable" class="start_game"> Начать игру</a>
         </div>
     </header>
-    
+
     <main>
         <div class="main-box">
             <div id="openModalRules" class="ruls">
@@ -27,31 +27,40 @@
                     <b>маленький шарик</b>, после чего быстро меняет напёрстки местами.
                     Затем <b>игроку</b> предлагается угадать, под каким из напёрстков
                     находится <b>шарик</b>.
-                </p>               
+                </p>
             </div>
 
-            <div  id="openModalGameTable" class="image-map">
+            <div id="openModalGameTable" class="image-map">
                 <a href="#closeGameTable" title="Close" class="close">×</a>
                 <div class="score">
-                    <p class="bet">Ставка:</p>
-                    <p class="money">Деньги:</p>
+                    <div class="player_score">
+                        <p class="bet">Ставка:</p>
+                        <p class="money">Деньги игрока:</p>
+                        <p class="master-money">Деньги мастера:</p>
 
-                    <button class="Place-a-bet-button" onclick="handleCheckCup()">Сделать ставку</button>
-                    <input type="number" class="Place-a-bet-input" placeholder="Ваша ставка" value="">
-                    <p class="player-message"></p>
+                        <button class="Place-a-bet-button" onclick="handleCheckCup()">Сделать ставку</button>
+                        <input type="number" class="Place-a-bet-input" placeholder="Ваша ставка" value="">
+                    </div>
+                    <div class="graphs">
+                        <div id="player_graph" class="player_graph"></div>
+                        <div id="master_graph" class="master_graph"></div>
+                    </div>
+                    <div class="player-message-div">
+                        <p class="player-message"></p>
+                    </div>
                 </div>
-            
+
                 <div class="playng_field">
 
-                    <button id="cup1" class="cupButton cup-1" disabled> 
+                    <button id="cup1" class="cupButton cup-1" disabled>
                         <img id="cup1Image" class="image-cup" src="public/Cup.png" alt="Наперсток 1">
                     </button>
-                    
-                    <button id="cup2" class="cupButton cup-2" disabled>    
+
+                    <button id="cup2" class="cupButton cup-2" disabled>
                         <img id="cup2Image" class="image-cup" src="public/Cup.png" alt="Наперсток 2">
                     </button>
 
-                    <button id="cup3" class="cupButton cup-3" disabled>    
+                    <button id="cup3" class="cupButton cup-3" disabled>
                         <img id="cup3Image" class="image-cup" src="public/Cup.png" alt="Наперсток 3">
                     </button>
 
@@ -60,7 +69,8 @@
         </div>
     </main>
 
-    <script src="Score_check.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> 
+        <script src="Score_check.js"></script>
 </body>
 
 </html>
